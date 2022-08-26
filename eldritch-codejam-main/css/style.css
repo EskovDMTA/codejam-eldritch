@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+.codejam {
+    background-image: url('../assets/ktulx-back.jpg');
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ancients-container {
+    display: flex;
+    justify-content: space-around; 
+    gap: 50px;
+    margin: 20px;
+}
+
+.ancient-item{
+ 
+ max-width: 350px;
+}
+
+.azathoth, .cthulthu, .cthulthu, .iogSothoth, .shubNiggurath{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+.active-ancient{
+    border: 15px solid #0892ee;
+    filter: opacity(50%);
+    
+}
+.item-active{
+    border: 4px solid rgb(11, 26, 238);
+    box-sizing: border-box;
+}
+
+.dificult-list{
+    list-style-type: none
+}
+
+.dificult-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+.current-stage{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.deca-container{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    min-width: 30%;
+}
+
+.dots-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 10px;
+}
+.dot-green1, .dot-green2, .dot-green3  {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(70, 206, 16, 0.486);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-items: center;
+    
+}
+.dot-brown1, .dot-brown2, .dot-brown3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(102, 51, 4, 0.836);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.dot-blue1, .dot-blue2, .dot-blue3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(19, 16, 233, 0.836);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+
+/* .mixin-deca {
+    border: 2px solid rgb(11, 26, 238);
+    margin-bottom: 20px;
+    font-size: 26px;
+    box-sizing: border-box;
+    color: rgb(11, 26, 238);
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+} */
+
+.dificult-list {
+    display: flex;
+    font-size: 20px;
+    
+}
+
+
+
+.push-card {
+    background: url('../assets/mythicCardBackground.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 171px;
+    height: 251px;
+    margin: 15px;
+}
+
+.push-card:active {
+    border: 10px solid #0892ee;
+    filter: opacity(50%);
+}
+
+.current-card{
+    margin-left: 30px;
+   
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 300px;
+}
+
+
+.mixin-deca, .dificult-item {
+    min-width: 150px;
+    text-align: center;
+    text-transform: uppercase; 
+  
+    padding: 10px 15px;
+    margin: 30px 25px;
+  
+    font-size: 50% + 40%;
+    font-weight: 600;
+  
+    transition: 0.5s;
+  }
+  
+
+.mixin-deca, .dificult-item { 
+    border: 5px solid #3498db; 
+    color: #3498db; 
+}
+
+.mixin-deca:hover, .dificult-item:hover {
+    background-color: #044c7ce7;
+    border: 5px solid lighten(#3498db, 5%);
+    color: #ffffff;
+
+    cursor: pointer;
+  }
+
+.active-btn {
+    background-color: #044c7ce7;
+    border: 5px solid lighten(#3498db, 5%);
+    color: #ffffff;
+
+    cursor: pointer;
+  }
+  
+.stage-text{
+font-size: 20px;
+color: #3498db;
+text-transform: uppercase; 
+  }
+.stage-text-end {
+    text-decoration: line-through; 
+  }
+ 
