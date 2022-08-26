@@ -801,7 +801,7 @@ function checkStage() {
     if(currentCart.indexOf('brown') !== -1){
         dotBrown1.textContent -=1
     }
-    curCart.style.backgroundImage = './eldritch-codejam-main' +`url('${currentCart}')`
+    curCart.style.backgroundImage = `url('${currentCart}')`
     if(FirstStageCount ===0){
         return 
     }
@@ -810,7 +810,7 @@ function checkStage() {
     }
     if (SecondStageCount > 0 && FirstStageCount ===0){
     
-    let currentCart = '.'+ (fullDeca.pop()).slice(2);
+    let currentCart = '..'+ (fullDeca.pop()).slice(2);
     console.log(`${currentCart} <-- вышедшая карта`)
     if(currentCart.indexOf('blue') !== -1){
         dotBlue2.textContent -=1
@@ -821,7 +821,7 @@ function checkStage() {
     if(currentCart.indexOf('brown') !== -1){
         dotBrown2.textContent -=1
     }
-    curCart.style.backgroundImage = `url("./eldritch-codejam-main + ${currentCart}")`
+    curCart.style.backgroundImage = `url('${currentCart}')`
     SecondStageCount -=1
     if(SecondStageCount ===0){
         return 
@@ -830,7 +830,7 @@ function checkStage() {
     console.log('2 стадия')
 }
     if (ThirdStageCount > 0 && FirstStageCount ===0 && SecondStageCount === 0 ){
-        let currentCart = '.'+ (fullDeca.pop()).slice(2);
+        let currentCart = (fullDeca.pop()).slice(2);
         console.log(`${currentCart} <-- вышедшая карта`)
         if(currentCart.indexOf('blue') !== -1){
             dotBlue3.textContent -= 1
@@ -841,7 +841,7 @@ function checkStage() {
         if(currentCart.indexOf('brown') !== -1){
             dotBrown3.textContent -=1
         }
-        curCart.style.backgroundImage = './eldritch-codejam-main' + `url('${currentCart}')`
+        curCart.style.backgroundImage = `url('${currentCart}')`
         ThirdStageCount -=1
         if(ThirdStageCount ===0){
             return 
