@@ -810,7 +810,7 @@ function checkStage() {
     }
     if (SecondStageCount > 0 && FirstStageCount ===0){
     
-    let currentCart = '..'+ (fullDeca.pop()).slice(2);
+    let currentCart = '.'+ (fullDeca.pop()).slice(2);
     console.log(`${currentCart} <-- вышедшая карта`)
     if(currentCart.indexOf('blue') !== -1){
         dotBlue2.textContent -=1
@@ -830,7 +830,7 @@ function checkStage() {
     console.log('2 стадия')
 }
     if (ThirdStageCount > 0 && FirstStageCount ===0 && SecondStageCount === 0 ){
-        let currentCart = (fullDeca.pop()).slice(2);
+        let currentCart = '.'+ (fullDeca.pop()).slice(2);
         console.log(`${currentCart} <-- вышедшая карта`)
         if(currentCart.indexOf('blue') !== -1){
             dotBlue3.textContent -= 1
