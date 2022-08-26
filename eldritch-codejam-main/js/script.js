@@ -801,7 +801,7 @@ function checkStage() {
     if(currentCart.indexOf('brown') !== -1){
         dotBrown1.textContent -=1
     }
-    curCart.style.backgroundImage = `url('${currentCart}')`
+    curCart.style.backgroundImage = './eldritch-codejam-main' +`url('${currentCart}')`
     if(FirstStageCount ===0){
         return 
     }
@@ -821,7 +821,7 @@ function checkStage() {
     if(currentCart.indexOf('brown') !== -1){
         dotBrown2.textContent -=1
     }
-    curCart.style.backgroundImage = `url('${currentCart}')`
+    curCart.style.backgroundImage = './eldritch-codejam-main' + `url('${currentCart}')`
     SecondStageCount -=1
     if(SecondStageCount ===0){
         return 
@@ -841,7 +841,7 @@ function checkStage() {
         if(currentCart.indexOf('brown') !== -1){
             dotBrown3.textContent -=1
         }
-        curCart.style.backgroundImage = `url('${currentCart}')`
+        curCart.style.backgroundImage = './eldritch-codejam-main' + `url('${currentCart}')`
         ThirdStageCount -=1
         if(ThirdStageCount ===0){
             return 
